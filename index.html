@@ -1,14 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Embedded | Home</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="font-body">
-    <div>
-      <h1 class="text-6xl font-bold text-danger">This is Embedded</h1>
-    </div>
+  <body class="font-body text-gray">
+    <main class="min-w-96">
+      <!-- Header Section -->
+      <div class="lg:bg-primary lg:py-12 md:px-6 lg:px-20 xl:px-40">
+        <header class="container mx-auto py-3 px-6 bg-white rounded-full">
+          <div class="flex items-center justify-between relative">
+            <div class="flex items-end gap-2">
+              <img
+                class="w-[68px] lg:w-24"
+                src="./assets/icons/logo-icon.png"
+                alt="Logo icon"
+              />
+              <span class="hidden lg:block text-black text-sm font-normal"
+                >Embedded</span
+              >
+            </div>
+            <ul
+              class="absolute top-6 lg:top-0 left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 text-center w-full lg:w-auto lg:relative lg:flex flex-col lg:flex-row lg:gap-10 xl:gap-20"
+            >
+              <li class="text-black py-2 lg:py-0"><a href="#">Platform</a></li>
+              <li class="text-black py-2 lg:py-0"><a href="#">Solutions</a></li>
+              <li class="text-black py-2 lg:py-0">
+                <a href="#">Developers</a>
+              </li>
+              <li class="text-black py-2 lg:py-0"><a href="#">Blog</a></li>
+            </ul>
+            <div>
+              <button class="btn hidden lg:block">Talk to us</button>
+              <img
+                class="lg:hidden"
+                width="24"
+                src="./assets/icons/hamburger-icon.png"
+                alt="Logo icon"
+              />
+            </div>
+          </div>
+        </header>
+      </div>
+    </main>
   </body>
 </html>

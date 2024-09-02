@@ -11,3 +11,8 @@
     --color-danger: 255 51 102;
   }
 }
+@layer components {
+  .btn {
+    @apply bg-danger rounded-full text-white px-10 py-3 font-semibold text-sm;
+  }
+}
