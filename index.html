@@ -9,9 +9,9 @@
   <body class="font-body text-gray">
     <main class="min-w-96">
       <!-- Header Section -->
-      <div class="lg:bg-primary lg:py-12 md:px-6 lg:px-20 xl:px-40">
+      <div class="lg:bg-primary lg:pt-12 md:px-6 lg:px-20 xl:px-40 relative">
         <header class="container mx-auto py-3 px-6 bg-white rounded-full">
-          <div class="flex items-center justify-between relative">
+          <div class="flex items-center justify-between">
             <div class="flex items-end gap-2">
               <img
                 class="w-[68px] lg:w-24"
@@ -24,7 +24,7 @@
             </div>
             <ul
               id="menu-area"
-              class="absolute top-6 lg:top-0 left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 text-center w-full lg:w-auto lg:relative lg:flex flex-col lg:flex-row lg:gap-10 xl:gap-20 bg-white hidden"
+              class="absolute top-8 lg:top-0 left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 text-center w-full lg:w-auto lg:relative lg:flex flex-col lg:flex-row lg:gap-10 xl:gap-20 bg-white hidden"
             >
               <li class="text-black py-2 lg:py-0 text-sm font-semibold">
                 <a href="#">Platform</a>
@@ -40,7 +40,11 @@
               </li>
             </ul>
             <div>
-              <button class="btn hidden lg:block">Talk to us</button>
+              <button
+                class="btn text-[18px] leading-5 tracking-wider font-bold py-4 px-12 hidden lg:block"
+              >
+                Talk to us
+              </button>
 
               <img
                 id="hamburger-icon"
@@ -71,17 +75,47 @@
 
       <!-- Hero Section -->
       <section class="bg-primary">
-        <div class="container mx-auto px-6 lg:px-20 xl:px-40">
-          <h1>Embedded expense management for</h1>
-          <!-- <div class="w-[927px] relative">
-            <div
-              class="border-2 border-card_border rounded-lg bg-gray_secondary opacity-85 px-14 py-4 w-[834px]"
+        <div class="container mx-auto px-6 lg:px-20 xl:px-40 pb-12 lg:pb-40">
+          <div class="max-w-[1357px] mx-auto pt-10 lg:pt-28 mb-5 lg:mb-6">
+            <h1
+              class="text-[40px] lg:text-8xl leading-[54px] lg:leading-[112px] font-semibold text-center"
             >
-              <div
-                class="border-2 border-card_border rounded-lg bg-gray_secondary opacity-85 px-14 py-4 w-[750px]"
-              ></div>
+              Embedded expense management for
+            </h1>
+          </div>
+
+          <div class="w-[342px] lg:w-[927px] max-w-full mx-auto">
+            <div
+              class="w-full border-2 border-[#BFB1F5] rounded-lg bg-[#E8E8FF] py-2 lg:py-4 mx-auto relative z-30"
+            >
+              <h2
+                class="text-3xl lg:text-7.5xl leading-10 lg:leading-[112px] font-semibold text-[#0B0B17] text-center"
+              >
+                Banks & Card Issuers
+              </h2>
             </div>
-          </div> -->
+            <div
+              class="border-2 border-card_border rounded-2lg bg-gray_secondary px-14 py-4 w-[89.968%] mx-auto -mt-8 lg:-mt-6 relative z-20"
+            ></div>
+            <div
+              class="border-2 border-card_border rounded-2lg bg-gray_secondary opacity-85 px-14 py-4 w-[80.906%] mx-auto -mt-8 lg:-mt-6"
+            ></div>
+          </div>
+          <div
+            class="max-w-[784px] mt-5 lg:mt-10 mx-auto text-center mb-8 lg:mb-20"
+          >
+            <p class="text-xl leading-6 lg:text-2xl font-normal text-gray">
+              Real-time card feeds on Visa, Mastercard, Virtual Cards from
+              American Express, Powerful Expense Policies, Workflow Automation
+              and Accounting Integrations - embedded in your platform
+            </p>
+            <button
+              class="btn text-sm leading-4 lg:text-[32px] lg:leading-10 font-semibold px-10 lg:px-20 py-3 lg:py-6 mt-6 lg:mt-16"
+            >
+              Talk to us
+            </button>
+          </div>
+          <img src="./assets/img/chart.png" alt="chart" />
         </div>
       </section>
     </main>

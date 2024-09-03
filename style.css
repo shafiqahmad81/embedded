@@ -9,12 +9,13 @@
     --color-secondary: 11 11 23;
     --color-danger: 255 51 102;
     --color-gray: 251 251 251;
+    --color-gray-primary: 223 223 255;
     --color-gray-secondary: 171 170 196;
     --color-border: 188 185 247;
   }
 }
 @layer components {
   .btn {
-    @apply bg-danger rounded-full text-white px-10 py-3 font-semibold text-sm;
+    @apply bg-danger rounded-full text-white;
   }
 }
