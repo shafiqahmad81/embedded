@@ -18,32 +18,73 @@
                 src="./assets/icons/logo-icon.png"
                 alt="Logo icon"
               />
-              <span class="hidden lg:block text-black text-sm font-normal"
+              <span class="hidden lg:block text-black text-sm font-semibold"
                 >Embedded</span
               >
             </div>
             <ul
-              class="absolute top-6 lg:top-0 left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 text-center w-full lg:w-auto lg:relative lg:flex flex-col lg:flex-row lg:gap-10 xl:gap-20"
+              id="menu-area"
+              class="absolute top-6 lg:top-0 left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 text-center w-full lg:w-auto lg:relative lg:flex flex-col lg:flex-row lg:gap-10 xl:gap-20 hidden"
             >
-              <li class="text-black py-2 lg:py-0"><a href="#">Platform</a></li>
-              <li class="text-black py-2 lg:py-0"><a href="#">Solutions</a></li>
-              <li class="text-black py-2 lg:py-0">
+              <li class="text-black py-2 lg:py-0 text-sm font-semibold">
+                <a href="#">Platform</a>
+              </li>
+              <li class="text-black py-2 lg:py-0 text-sm font-semibold">
+                <a href="#">Solutions</a>
+              </li>
+              <li class="text-black py-2 lg:py-0 text-sm font-semibold">
                 <a href="#">Developers</a>
               </li>
-              <li class="text-black py-2 lg:py-0"><a href="#">Blog</a></li>
+              <li class="text-black py-2 lg:py-0 text-sm font-semibold">
+                <a href="#">Blog</a>
+              </li>
             </ul>
             <div>
               <button class="btn hidden lg:block">Talk to us</button>
+
               <img
-                class="lg:hidden"
-                width="24"
+                id="hamburger-icon"
+                class="lg:hidden w-6 h-6"
                 src="./assets/icons/hamburger-icon.png"
                 alt="Logo icon"
               />
+
+              <svg
+                id="close-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-black hidden"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
             </div>
           </div>
         </header>
       </div>
+
+      <!-- Hero Section -->
+      <section class="bg-primary">
+        <div class="container mx-auto px-6 lg:px-20 xl:px-40">
+          <h1>Embedded expense management for</h1>
+          <div class="w-[927px] relative">
+            <div
+              class="border-2 border-card_border rounded-lg bg-gray_secondary opacity-85 px-14 py-4 w-[834px]"
+            >
+              <div
+                class="border-2 border-card_border rounded-lg bg-gray_secondary opacity-85 px-14 py-4 w-[750px]"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <script type="module" src="main.js"></script>
   </body>
 </html>

@@ -7,8 +7,10 @@
   :root {
     --color-primary: 22 23 50;
     --color-secondary: 11 11 23;
-    --color-gray: 251 251 251;
     --color-danger: 255 51 102;
+    --color-gray: 251 251 251;
+    --color-gray-secondary: 171 170 196;
+    --color-border: 188 185 247;
   }
 }
 @layer components {
