@@ -6,13 +6,15 @@
     <title>Embedded | Home</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="font-body text-gray">
+  <body>
     <main class="min-w-96">
       <!-- Header Section -->
-      <div class="lg:bg-primary lg:pt-12 md:px-6 lg:px-20 xl:px-40 relative">
-        <header class="container mx-auto py-3 px-6 bg-white rounded-full">
-          <div class="flex items-center justify-between">
-            <div class="flex items-end gap-2">
+      <header class="max-lg:bg-white lg:pt-12 relative">
+        <div class="container">
+          <div
+            class="flex items-center justify-between py-3 lg:px-6 bg-white rounded-full"
+          >
+            <div class="flex items-end gap-2 cursor-pointer">
               <img
                 class="w-[68px] lg:w-24"
                 src="./assets/icons/logo-icon.png"
@@ -24,24 +26,32 @@
             </div>
             <ul
               id="menu-area"
-              class="absolute top-8 lg:top-0 left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 text-center w-full lg:w-auto lg:relative lg:flex flex-col lg:flex-row lg:gap-10 xl:gap-20 bg-white hidden"
+              class="absolute top-8 lg:top-0 left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 text-center w-full lg:w-auto lg:relative lg:flex flex-col lg:flex-row lg:gap-6 xl:gap-14 bg-white z-40 pb-10 lg:pb-0 hidden"
             >
-              <li class="text-black py-2 lg:py-0 text-sm font-semibold">
+              <li
+                class="text-black py-2 px-4 cursor-pointer text-sm font-semibold"
+              >
                 <a href="#">Platform</a>
               </li>
-              <li class="text-black py-2 lg:py-0 text-sm font-semibold">
+              <li
+                class="text-black py-2 px-4 cursor-pointer text-sm font-semibold"
+              >
                 <a href="#">Solutions</a>
               </li>
-              <li class="text-black py-2 lg:py-0 text-sm font-semibold">
+              <li
+                class="text-black py-2 px-4 cursor-pointer text-sm font-semibold"
+              >
                 <a href="#">Developers</a>
               </li>
-              <li class="text-black py-2 lg:py-0 text-sm font-semibold">
+              <li
+                class="text-black py-2 px-4 cursor-pointer text-sm font-semibold"
+              >
                 <a href="#">Blog</a>
               </li>
             </ul>
             <div>
               <button
-                class="btn text-[18px] leading-5 tracking-wider font-bold py-4 px-12 hidden lg:block"
+                class="btn text-[18px] tracking-wider font-bold py-4 px-12 hidden lg:block h-auto"
               >
                 Talk to us
               </button>
@@ -70,21 +80,17 @@
               </svg>
             </div>
           </div>
-        </header>
-      </div>
+        </div>
+      </header>
 
       <!-- Hero Section -->
-      <section class="bg-primary">
-        <div class="container mx-auto px-6 lg:px-20 xl:px-40 pb-12 lg:pb-40">
+      <section class="relative">
+        <div class="container pb-12 lg:pb-40">
           <div class="max-w-[1357px] mx-auto pt-10 lg:pt-28 mb-5 lg:mb-6">
-            <h1
-              class="text-[40px] lg:text-8xl leading-[54px] lg:leading-[112px] font-semibold text-center"
-            >
-              Embedded expense management for
-            </h1>
+            <h1 class="text-center">Embedded expense management for</h1>
           </div>
 
-          <div class="w-[342px] lg:w-[927px] max-w-full mx-auto">
+          <div class="w-[342px] lg:w-[927px] max-w-full mx-auto relative">
             <div
               class="w-full border-2 border-[#BFB1F5] rounded-lg bg-[#E8E8FF] py-2 lg:py-4 mx-auto relative z-30"
             >
@@ -95,27 +101,328 @@
               </h2>
             </div>
             <div
-              class="border-2 border-card_border rounded-2lg bg-gray_secondary px-14 py-4 w-[89.968%] mx-auto -mt-8 lg:-mt-6 relative z-20"
+              class="border-2 border-card-border rounded-2lg bg-gray-secondary py-4 absolute bottom-0 left-0 right-0 transition-all scale-x-[0.90] translate-y-[6px] lg:translate-y-4 z-20"
             ></div>
             <div
-              class="border-2 border-card_border rounded-2lg bg-gray_secondary opacity-85 px-14 py-4 w-[80.906%] mx-auto -mt-8 lg:-mt-6"
+              class="border-2 border-card_border rounded-2lg bg-gray-secondary opacity-85 px-14 py-4 absolute bottom-0 left-0 right-0 transition-all scale-x-[0.80] translate-y-[14px] lg:translate-y-8"
             ></div>
           </div>
           <div
-            class="max-w-[784px] mt-5 lg:mt-10 mx-auto text-center mb-8 lg:mb-20"
+            class="max-w-[784px] mt-10 lg:mt-20 mx-auto text-center mb-8 lg:mb-20"
           >
-            <p class="text-xl leading-6 lg:text-2xl font-normal text-gray">
+            <p class="text-xl">
               Real-time card feeds on Visa, Mastercard, Virtual Cards from
               American Express, Powerful Expense Policies, Workflow Automation
               and Accounting Integrations - embedded in your platform
             </p>
             <button
-              class="btn text-sm leading-4 lg:text-[32px] lg:leading-10 font-semibold px-10 lg:px-20 py-3 lg:py-6 mt-6 lg:mt-16"
+              class="btn text-sm lg:text-[32px] px-10 lg:px-20 py-3 lg:py-6 mt-6 lg:mt-16"
             >
               Talk to us
             </button>
           </div>
-          <img src="./assets/img/chart.png" alt="chart" />
+          <div class="container-sm">
+            <img src="./assets/img/chart.png" alt="chart" />
+          </div>
+        </div>
+        <div
+          class="absolute -top-20 -left-4 w-[722px] max-w-full -z-10 hidden lg:block"
+        >
+          <img src="./assets/img/mask-bg.svg" alt="purple" />
+        </div>
+        <div
+          class="blue-vector absolute top-1/2 -translate-y-1/2 right-0 w-[630px] -z-10 hidden lg:block"
+        >
+          <img src="./assets/img/blue.svg" alt="blue" />
+        </div>
+      </section>
+
+      <!-- Powerfull expence Section -->
+      <section>
+        <div class="container">
+          <h2 class="text-center max-w-[1055px] mx-auto mb-8 lg:mb-16">
+            Powerful expense management,the way you prefer
+          </h2>
+          <div
+            class="flex flex-col lg:flex-row items-end justify-between gap-[7.260%]"
+          >
+            <div
+              class="w-full lg:w-[37.248%] order-2 lg:order-1 mt-11 md:mt-14 lg:mt-0"
+            >
+              <h4>White-labeled expense management</h4>
+              <p class="mb-10">
+                A ready-to-use expense management platform that automates
+                expense reporting, credit card reconciliation, reimbursements,
+                accounting and more - all on customers’ existing credit cards.
+              </p>
+              <h4>Expense API</h4>
+              <p>
+                Use Fyle’s API to craft a customized, all-in-one expense
+                management solution that fits into your offering, fulfils your
+                customers’ needs, and integrates seamlessly with your stack.
+              </p>
+            </div>
+            <div
+              class="relative w-full lg:w-[calc(100%-37.248%)] order-1 lg:order-2"
+            >
+              <div class="max-w-full px-3 md:px-7">
+                <img src="./assets/img/chart.png" alt="chart" />
+              </div>
+              <div
+                class="absolute -bottom-3 md:-bottom-7 left-0 max-w-[39.177%]"
+              >
+                <img src="./assets/img/code.png" alt="code" />
+              </div>
+              <div
+                class="w-[50px] md:w-[15.294%] absolute bottom-4 right-0 flex flex-col gap-2"
+              >
+                <div
+                  class="w-full h-5 md:h-12 border-[0.59px] border-gray-border bg-white rounded-md inline-flex items-center justify-center"
+                >
+                  <img
+                    class="w-5 md:w-12"
+                    src="./assets/img/visa.png"
+                    alt="visa"
+                  />
+                </div>
+                <div
+                  class="w-full h-5 md:h-12 border-[0.59px] border-gray-border bg-white rounded-md inline-flex items-center justify-center"
+                >
+                  <img
+                    class="w-7 md:w-[76px]"
+                    src="./assets/img/aerican.png"
+                    alt="visa"
+                  />
+                </div>
+                <div
+                  class="w-full h-5 md:h-12 border-[0.59px] border-gray-border bg-white rounded-md inline-flex items-center justify-center"
+                >
+                  <img
+                    class="w-4 md:w-11"
+                    src="./assets/img/mastercard.png"
+                    alt="mastercard"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trusted Section -->
+      <section class="py-12 lg:py-40">
+        <div class="container">
+          <h3 class="text-center">Trusted by Thousands of Customers</h3>
+        </div>
+        <!-- <div
+          class="relative w-full h-[var(--height)] mt-16"
+          style="--width: 100px; --height: 50px; --quantity: 12"
+        >
+          <div
+            class="bg-brand-overlay absolute -top-11 -bottom-20 left-0 right-0 w-full mix-blend-darken"
+          ></div>
+          <div
+            class="flex items-center gap-5 min-w-[calc(var(--width) * var(--quantity))] absolute left-full animate-spin-slow"
+          >
+            <div
+              class="w-[var(--width)] h-[var(--height)] delay-[calc((10s / var(--quantity)) * (var(--position) -1))]"
+              style="--position: 1"
+            >
+              <img
+                width="full"
+                src="./assets/img/trusted-icon1.png"
+                alt="Trusted"
+              />
+            </div>
+            <div
+              class="w-[var(--width)] h-[var(--height)] delay-[calc((10s / var(--quantity)) * (var(--position) -1))]"
+              style="--position: 2"
+            >
+              <img
+                width="full"
+                src="./assets/img/trusted-icon2.png"
+                alt="Trusted"
+              />
+            </div>
+            <div
+              class="w-[var(--width)] h-[var(--height)] delay-[calc((10s / var(--quantity)) * (var(--position) -1))]"
+              style="--position: 3"
+            >
+              <img
+                width="full"
+                src="./assets/img/trusted-icon3.png"
+                alt="Trusted"
+              />
+            </div>
+
+            <div
+              class="w-[var(--width)] h-[var(--height)] delay-[calc((10s / var(--quantity)) * (var(--position) -1))]"
+              style="--position: 4"
+            >
+              <img
+                width="full"
+                src="./assets/img/trusted-icon6.png"
+                alt="Trusted"
+              />
+            </div>
+
+            <div
+              class="w-[var(--width)] h-[var(--height)] delay-[calc((10s / var(--quantity)) * (var(--position) -1))]"
+              style="--position: 5"
+            >
+              <img
+                width="full"
+                src="./assets/img/trusted-icon7.png"
+                alt="Trusted"
+              />
+            </div>
+
+            <div
+              class="w-[var(--width)] h-[var(--height)] delay-[calc((10s / var(--quantity)) * (var(--position) -1))]"
+              style="--position: 6"
+            >
+              <img
+                width="full"
+                src="./assets/img/trusted-icon8.png"
+                alt="Trusted"
+              />
+            </div>
+
+            <div
+              class="w-[var(--width)] h-[var(--height)] delay-[calc((10s / var(--quantity)) * (var(--position) -1))]"
+              style="--position: 7"
+            >
+              <img
+                width="full"
+                src="./assets/img/trusted-icon9.png"
+                alt="Trusted"
+              />
+            </div>
+
+            <div
+              class="w-[var(--width)] h-[var(--height)] delay-[calc((10s / var(--quantity)) * (var(--position) -1))]"
+              style="--position: 8"
+            >
+              <img
+                width="full"
+                src="./assets/img/trusted-icon10.png"
+                alt="Trusted"
+              />
+            </div>
+
+            <div
+              class="w-[var(--width)] h-[var(--height)] delay-[calc((10s / var(--quantity)) * (var(--position) -1))]"
+              style="--position: 9"
+            >
+              <img
+                width="full"
+                src="./assets/img/trusted-icon11.png"
+                alt="Trusted"
+              />
+            </div>
+
+            <div
+              class="w-[var(--width)] h-[var(--height)] delay-[calc((10s / var(--quantity)) * (var(--position) -1))]"
+              style="--position: 10"
+            >
+              <img
+                width="full"
+                src="./assets/img/trusted-icon12.png"
+                alt="Trusted"
+              />
+            </div>
+          </div>
+        </div> -->
+      </section>
+
+      <!-- Elevate customer managment -->
+      <section class="bg-white pt-12 md:pt-20 lg:pt-40">
+        <div class="container">
+          <div
+            class="pt-5 px-5 md:py-24 md:px-0 md:pl-6 lg:pl-[136px] bg-background rounded-3xl md:rounded-[64px] relative overflow-hidden"
+          >
+            <h2 class="text-white max-w-[1106px] relative z-20">
+              Elevate customer experience and earn higher revenue with embedded
+              expense management
+            </h2>
+            <div class="flex flex-col md:flex-row mt-6 md:mt-16">
+              <div class="w-full md:w-[46.449%] pr-[7.991%] relative z-20">
+                <div class="mb-6 md:mb-10">
+                  <h5 class="mb-2 md:mb-3">
+                    Earn higher revenue from your customers
+                  </h5>
+                  <p>
+                    Earn additional SaaS revenue from your existing customers
+                    with embedded expense management. Increase ACV and onboard
+                    more users, all while giving them a cost-effective platform.
+                  </p>
+                </div>
+                <div class="mb-6 md:mb-10">
+                  <h5 class="mb-2 md:mb-3">
+                    Go from contract to deployment 5X faster
+                  </h5>
+                  <p>
+                    Use Fyle’s pre-built expense management offering in your
+                    brand, that comes with years of experience, and go to market
+                    faster. Start offering customers the value of real-time
+                    expense management right from Day 1.
+                  </p>
+                </div>
+                <div class="mb-6 md:mb-0">
+                  <h5 class="mb-2 md:mb-3">
+                    Increase product adoption and reduce churn
+                  </h5>
+                  <p>
+                    Ensure better user adoption and lower churn by rolling out
+                    powerful new expense management features. When your users
+                    learn that they can submit receipts via text, they’re not
+                    going to turn to competitors.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-full md:w-[calc(100%-46.449%)] flex rounded-t-xl md:rounded-t-none md:rounded-ss-[32px] overflow-hidden relative z-20"
+              >
+                <img
+                  class="w-full h-[458px] md:h-auto object-cover"
+                  src="./assets/img/customer-management.png"
+                  alt="customer"
+                />
+              </div>
+              <div class="absolute top-0 right-0 z-10 hidden md:block">
+                <img width="620" src="./assets/img/blob.png" alt="blob" />
+              </div>
+              <div class="absolute bottom-0 left-0 z-10">
+                <img
+                  class="hidden md:block"
+                  src="./assets/img/bottom-blob.png"
+                  alt="blod-bottom"
+                />
+                <img
+                  class="md:hidden"
+                  src="./assets/img/blod-mobile-bg.png"
+                  alt="blod"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Build section -->
+      <section class="py-12 md:py-20 lg:py-40">
+        <div class="container">
+          <h2 class="text-center text-secondary">
+            Build, launch and scale faster
+          </h2>
+          <div
+            class="pt-6 md:pt-16 px-6 lg:px-[136px] flex flex-col md:flex-row"
+          >
+            <div class="w-[52.787%]">
+              <div>dk</div>
+            </div>
+            <div class="w-[47.213%] pl-[4.820%]">sdkf</div>
+          </div>
         </div>
       </section>
     </main>

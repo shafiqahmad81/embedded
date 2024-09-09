@@ -8,14 +8,74 @@
     --color-primary: 22 23 50;
     --color-secondary: 11 11 23;
     --color-danger: 255 51 102;
+    --color-hover: 173 28 64;
     --color-gray: 251 251 251;
     --color-gray-primary: 223 223 255;
     --color-gray-secondary: 171 170 196;
+    --color-gray-border: 180 179 179;
     --color-border: 188 185 247;
+    --font-sans: "Plus Jakarta Sans", sans-serif;
+  }
+
+  body {
+    @apply font-sans text-forground bg-background leading-[1.5];
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans font-semibold leading-[1.167];
+  }
+
+  h1,
+  .h1 {
+    @apply text-h1-sm lg:text-h1 font-bold;
+  }
+  h2,
+  .h2 {
+    @apply text-h2-sm lg:text-h2;
+  }
+  h3,
+  .h3 {
+    @apply text-h3-sm lg:text-h3;
+  }
+  h4,
+  .h4 {
+    @apply text-h4-sm lg:text-h4 mb-2 lg:mb-3;
+  }
+  h5,
+  .h5 {
+    @apply text-h5;
   }
 }
+
+@layer utilities {
+  .container {
+    @apply px-6 max-w-[1600px] mx-auto;
+  }
+  .container-sm {
+    @apply max-w-[1328px] mx-auto;
+  }
+}
+
 @layer components {
   .btn {
-    @apply bg-danger rounded-full text-white;
+    @apply bg-danger rounded-full text-white transition-colors hover:bg-hover capitalize h-14 lg:h-20 inline-flex items-center justify-center gap-2;
+  }
+}
+
+/* ::-webkit-scrollbar {
+  width: 0;
+} */
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: calc(var(--width) * -1);
   }
 }
