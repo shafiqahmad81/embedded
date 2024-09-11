@@ -11,11 +11,19 @@ module.exports = {
         background: "rgb(var(--color-primary) / <alpha-value>)",
         forground: "rgb(var(--color-gray) / <alpha-value>)",
         secondary: "rgb(var(--color-secondary) / <alpha-value>)",
+        "secondary-list": "rgb(var(--color-secondary-list) / <alpha-value>)",
         danger: "rgb(var(--color-danger) / <alpha-value>)",
         hover: "rgb(var(--color-hover) / <alpha-value>)",
         "gray-primary": "rgb(var(--color-gray-primary) / <alpha-value>)",
+        "pink-primary": "rgb(var(--color-pink) / <alpha-value>)",
         "gray-secondary": "rgb(var(--color-gray-secondary) / <alpha-value>)",
+        "gray-secondary-title":
+          "rgb(var(--color-gray-secondary-title) / <alpha-value>)",
+        "gray-secondary-before":
+          "rgb(var(--color-gray-secondary-before) / <alpha-value>)",
         "gray-border": "rgb(var(--color-gray-border) / <alpha-value>)",
+        "gray-border-service":
+          "rgb(var(--color-gray-border-service) / <alpha-value>)",
         "card-border": "rgb(var(--color-border) / <alpha-value>)",
       },
       fontSize: {

@@ -7,12 +7,17 @@
   :root {
     --color-primary: 22 23 50;
     --color-secondary: 11 11 23;
+    --color-secondary-list: 57 58 84;
     --color-danger: 255 51 102;
     --color-hover: 173 28 64;
     --color-gray: 251 251 251;
+    --color-pink: 116 46 255;
     --color-gray-primary: 223 223 255;
     --color-gray-secondary: 171 170 196;
+    --color-gray-secondary-title: 163 163 177;
+    --color-gray-secondary-before: 212 212 226;
     --color-gray-border: 180 179 179;
+    --color-gray-border-service: 213 213 245;
     --color-border: 188 185 247;
     --font-sans: "Plus Jakarta Sans", sans-serif;
   }
@@ -54,7 +59,7 @@
 
 @layer utilities {
   .container {
-    @apply px-6 max-w-[1600px] mx-auto;
+    @apply px-6 max-w-[1648px] mx-auto;
   }
   .container-sm {
     @apply max-w-[1328px] mx-auto;
@@ -64,6 +69,9 @@
 @layer components {
   .btn {
     @apply bg-danger rounded-full text-white transition-colors hover:bg-hover capitalize h-14 lg:h-20 inline-flex items-center justify-center gap-2;
+  }
+  .active {
+    @apply text-green-400;
   }
 }
 
