@@ -37,6 +37,8 @@ module.exports = {
         h4: "2rem", // 32px
         "h4-sm": "1rem", // 16px
         h5: "1.25rem", // 20px
+        h6: "1rem", // 16px
+        "h6-sm": "0.875rem", // 16px
       },
       borderRadius: {
         "2lg": "0.675rem",

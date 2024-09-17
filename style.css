@@ -55,6 +55,10 @@
   .h5 {
     @apply text-h5;
   }
+  h6,
+  .h6 {
+    @apply text-h6-sm sm:text-h6 mb-3;
+  }
 }
 
 @layer utilities {
